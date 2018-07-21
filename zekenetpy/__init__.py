@@ -1,1 +1,2 @@
-from neuralnetwork import ZekeNet, LinearClassifier
+from neuralnetwork import ZekeNet, LinearClassifier, LinearRegressor
+import fileman
