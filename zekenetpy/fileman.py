@@ -28,7 +28,8 @@ def load_from_file(location):
         weights = data['weights']
 
         types = {'default':neuralnetwork.ZekeNet,
-                 'linclass':neuralnetwork.LinearClassifier}
+                 'linclass':neuralnetwork.LinearClassifier,
+                 'linreg':neuralnetwork.LinearRegressor}
         zekenet = types[net_type](num_in, num_out, *num_hidden)
         all_connections = zekenet.get_all_connections()
 

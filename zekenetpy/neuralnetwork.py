@@ -109,3 +109,4 @@ class LinearRegressor(ZekeNet):
         super(LinearRegressor, self).__init__(num_in, num_out, *num_hidden)
         self.set_sigmoid_hidden(sigmoid.leaky_ReLU)
         self.set_sigmoid_out(sigmoid.leaky_ReLU)
+        self.net_type = 'linreg'
